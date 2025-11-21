@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+JP+N&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <title>JS Calculator</title>
 </head>
-<body>
-    <main id="calculator-Container">
-        <input id="display" type="text" readonly></input>
 
-        <div class="buttons">
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('-')">-</button>
-            <button onclick="appendToDisplay('x')">x</button>
-            <button onclick="appendToDisplay('÷')">÷</button>
+
+<body>
+    <main class="calculator">
+        <input id="display" type="text" readonly></input>
+        <div id="buttonsContainer">
+            <button id="topBtns"onclick="appendToDisplay('+')">+</button>
+            <button id="topBtns"onclick="appendToDisplay('-')">-</button>
+            <button id="topBtns"onclick="appendToDisplay('x')">x</button>
+            <button id="topBtns"onclick="appendToDisplay('÷')">÷</button>
             <button onclick="appendToDisplay('7')">9</button>
             <button onclick="appendToDisplay('8')">8</button>
             <button onclick="appendToDisplay('9')">7</button>
@@ -28,13 +32,6 @@
             <button onclick="appendToDisplay('0')">.</button>
             <button onclick="clearDisplay()">C</button>
             <button onclick="calculate()">=</button>
-            
-          
-
-
-
-
-
         </div>
 
     </main>
