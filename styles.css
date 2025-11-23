@@ -1,39 +1,87 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 body{
-    background-color: #f8e8d1;
+    background-image: url('Images/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     height: 100vh;
     width: auto;
-    justify-content: center;
     align-items: center;
+    color: #fdf7f0;
+    position: relative;
+
 
 }
-.calculator{
+header{
     background-color: #554149;
-    max-width: 23em;
-    border: 6px solid#554149;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 5em;
+}
+h1{
+    font-size: 2.5em;
+    margin-top: 0.6em;
+}
+#logo{
+    width: 6em;
+    height: auto;
+}
+
+
+/* TOP STICKER */
+#orangeBtn{
+    position: absolute;
+    top: 9.8em;
+    left: 0.1em;
+    width: 3.5em;
+}
+#r2hDoodle{
+    position: absolute;
+    top: 5.3em;
+    right: 2.5em;
+    width: 4.4em;}
+
+
+
+.calculator{
+
+    background-color: #554149;
+    max-width: 22em;
+    height: auto;
+    border: 3px solid#554149;
+    margin: 3.7em;
+    padding: 0.6em;
     border-radius: 17px;
-    font-family: "WDXL Lubrifont JP N", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     overflow: hidden;
 }
 #display{
     background-color:#bca5ae80;
-    width: 280px;
-    padding: 3em;
-    text-align: left;
+    color: #fdf7f0;
+    width: 100%;
+    border-radius: 15px;
+    padding: 0.4em;
+    text-align: right;
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+    font-size: 2.5em;
     border: none;
 }
 
 #buttonsContainer{
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    gap: 0.2em;
-    margin-top: 1em;
+    gap: 0.5em;
+    margin-top: 1.2em
+}
+#equalBtn{
+    grid-column: 1/-1;
+    width: 100%;
 }
 
 /*  color of top row */
@@ -49,14 +97,13 @@ body{
 }
 /* rest of the buttons/regular properties */
 button{
-    width: 6em;
-    height: 6em;
-    border: none;
-    border-radius: 50px;
-
     background-color: #fff5fb;
-    /* font-weight: bold; */
-    font-size: 0.9em;
+    width: 100%;
+    height: 1.8em;
+    border: none;
+    border-radius: 55px;
+    font-family: "WDXL Lubrifont JP N", sans-serif;
+    font-size: 1em;
     cursor: pointer;
 }
 button:hover{
@@ -65,4 +112,174 @@ button:hover{
 button:active{
     background-color: #fff5fb;
     
+}
+
+/* BOTTOM STICKERS */
+#mathDoodle{
+    position: absolute;
+    bottom: 5em;
+    left: 1em;
+    width: 5.7em;
+}
+.btmStickers{
+    position: absolute;
+    right: 0.1em;
+    bottom: 6.3em;
+    display: flex;
+    flex-direction: column;
+}
+#star{
+    width: 3em;
+    height: auto;
+}
+#apple{
+    width: 3em;
+    height: auto;
+    margin-left: 1.8em;
+}
+
+
+
+
+#footerSticker{
+    position: absolute;
+    width: 5em;
+
+    bottom: 3.2em;
+
+}
+footer{
+    margin-top: auto;
+    padding: 1.2em 0;
+    background-color: #554149;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+}
+
+
+/* ---RESPONSIVE QUERIES'S */
+
+/* Original Starting Point  iPhone SE 375 x 667*/
+
+/* Cellular Devices */
+@media (min-width: 376px) and (max-width: 480px){
+    #orangeBtn{
+        top: 12em;
+        left: 1em;
+    }
+    #r2hDoodle{
+        top: 5.7em;
+        width: 6em;
+    }
+        
+    .calculator{
+        margin-top: 8.7em;
+        max-width: 18em;
+    }
+    #display{
+        font-size: 2em;
+    }
+    #mathDoodle{
+        bottom: 7.6em;
+        width: 6.5em;
+    }
+    .btmStickers{
+        bottom: 17.3em;
+        right: 1.4em;
+    }
+}
+/* tablets and small laptops */
+@media (min-width: 768px) and (max-width: 1023px){
+    header{
+        gap: 19em;
+    }
+    h1{
+        margin-top: 0.5em;
+        font-size: 3em;
+    }
+    #logo{
+        width: 7em;
+    }
+    #orangeBtn{
+        top: 14.8em;
+        left: 3em;
+        width: 4.5em;
+    }
+    #r2hDoodle{
+        top: 7em;
+        width: 7em;
+    }
+        
+    .calculator{
+        margin-top: 13.2em;
+        max-width: 18em;
+        height: 22em;
+    }
+    #display{
+        font-size: 2.5em;
+    }
+    #mathDoodle{
+        bottom: 22.5em;
+        width: 8em;
+    }
+    .btmStickers{
+        bottom: 17.3em;
+        right: 2.4em;
+    }
+    #star{
+        width: 4.5em;
+    }
+    #apple{
+        width: 4em;
+        margin-left: 2.8em;}
+}
+    
+
+/* desktops and large laptops */
+@media (min-width: 1024px){
+    header{
+        gap: 48em;
+    }
+    h1{
+        margin-top: 0.2em;
+        font-size: 5.5em;
+    }
+    #logo{
+        width: 9em;
+    }
+    #orangeBtn{
+        top: 10.8em;
+        left: 9em;
+        width: 5.5em;
+    }
+    #r2hDoodle{
+        top: 9.3em;
+        right: 5em;
+        width: 8em;
+    }
+        
+    .calculator{
+        margin-top: 10.2em;
+        max-width: 20em;
+        height: 23em;
+    }
+    #display{
+        font-size: 3em;
+    }
+    #mathDoodle{
+        bottom: 14.5em;
+        left: 6em;
+        width: 10em;
+    }
+    .btmStickers{
+        bottom: 9.3em;
+        right: 7.4em;
+    }
+    #star{
+        width: 5em;
+    }
+    #apple{
+        width: 5em;
+        margin-left: 3.8em;}
 }

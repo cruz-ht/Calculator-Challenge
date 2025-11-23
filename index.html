@@ -12,32 +12,56 @@
 
 
 <body>
+
+    <header>
+        <h1>Try Me !</h1>
+        <image id="logo" src="Images/calclogo.png" alt="Cruz Calculator Logo">
+    </header>
+
+    <!-- TOP STICKERS -->
+    <image id="orangeBtn" src="Images/orange.png" alt="Decorative Button Sticker"></image>
+
+    <image id="r2hDoodle" src="Images/r2h chalk.png" alt="Doodle"></image>
+    <!-- ------------ -->
+
     <main class="calculator">
         <input id="display" type="text" readonly></input>
         <div id="buttonsContainer">
-            <button id="topBtns"onclick="appendToDisplay('+')">+</button>
-            <button id="topBtns"onclick="appendToDisplay('-')">-</button>
-            <button id="topBtns"onclick="appendToDisplay('x')">x</button>
-            <button id="topBtns"onclick="appendToDisplay('÷')">÷</button>
-            <button onclick="appendToDisplay('7')">9</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">7</button>
-            <button onclick="appendToDisplay('4')">6</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">4</button>
-            <button onclick="appendToDisplay('1')">3</button>
-            <button onclick="appendToDisplay('2')">2</button>
-            <button onclick="appendToDisplay('3')">1</button>
-            <button onclick="appendToDisplay('.')">0</button>
-            <button onclick="appendToDisplay('0')">.</button>
-            <button onclick="clearDisplay()">C</button>
-            <button onclick="calculate()">=</button>
+            <button data-key="+" id="topBtns"onclick="appendToDisplay('+')">+</button>
+            <button data-key="-" id="topBtns"onclick="appendToDisplay('-')">-</button>
+            <button data-key="*" id="topBtns"onclick="appendToDisplay('*')">x</button>
+            <button data-key="/" id="topBtns"onclick="appendToDisplay('/')">÷</button>
+            <button data-key="9" onclick="appendToDisplay('9')">9</button>
+            <button data-key="8" onclick="appendToDisplay('8')">8</button>
+            <button data-key="7" onclick="appendToDisplay('7')">7</button>
+            <button data-key="6" onclick="appendToDisplay('6')">6</button>
+            <button data-key="5" onclick="appendToDisplay('5')">5</button>
+            <button data-key="4" onclick="appendToDisplay('4')">4</button>
+            <button data-key="3" onclick="appendToDisplay('3')">3</button>
+            <button data-key="2" onclick="appendToDisplay('2')">2</button>
+            <button data-key="1" onclick="appendToDisplay('1')">1</button>
+            <button data-key="0" onclick="appendToDisplay('0')">0</button>
+            <button data-key="." onclick="appendToDisplay('.')">.</button>
+            <button data-key="Escape" onclick="clearDisplay()">C</button>
+            <button data-key="Enter" id="equalBtn" onclick="calculate()">=</button>
         </div>
-
     </main>
 
+    <!-- BOTTOM STICKERS -->
+    <image id="mathDoodle" src="Images/mathdoodle.png" alt="Math Doodle"></image>
+
+    <section class="btmStickers">
+        <image id="star" src="Images/starbtn.png" alt="Decorative Button Sticker"></image>
+        <image id="apple" src="Images/apple.png" alt="Decorative Sticker of an Apple"></image>
+    </section>
 
 
- <script src="index.js"></script>   
+    <image id="footerSticker" src="Images/footermk.png" alt="Decorative Sticker Above Footer"></image>
+    <!-- --------------- -->
+    <footer>
+        <p>© Cruz Calculator</p>
+    </footer>
+
+ <script src="index.js"></script>
 </body>
 </html>
