@@ -1,10 +1,18 @@
 ![README Banner](Images/readmelogo.png)
+# Table of Contents
+- [Project Overview](Overview)
+- [Features](#Features)
+- [How to Use the Keyboard](#Keyboard-Controls)
+- [How to Install](#Installation)
+- [Hosted Url](#Live-Url)
 
-# Project Overview: 
+
+# Overview: 
 
  Welcome to Cruz's Calculator, A Bobby Jack–inspired calculator designed for solving simple arithmetic with a fun aesthetic.
  Cruz Calculator performs addition, subtraction, multiplication, division, supports decimals, includes 
  full keyboard input, and adjusts smoothly across all screen sizes.
+
 
 # Features
 
@@ -49,6 +57,10 @@ https://github.com/cruz-ht/Calculator-Challenge.git
 File -> Open Folder -> Calculator-Challenge
 
 
+
+# Live Url
+ Optional, If you wish to just take a Look, Use this Link !
+ https://cruz-ht.github.io/Calculator-Challenge/
 
 
 
