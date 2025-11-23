@@ -42,5 +42,12 @@ document.addEventListener("keydown", function(keyboard){
     }
 });
 
+// to unmute and play music on users first click, helps prevent autoplay issues on some browsers
+document.addEventListener("click", function () {
+  const music = document.getElementById("music");
+  music.muted = false;
+  music.play();
+}, { once: true });
+
 
 
