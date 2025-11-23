@@ -1,6 +1,6 @@
 ![README Banner](Images/readmelogo.png)
 # Table of Contents
-- [Project Overview](Overview)
+- [Project Overview](Overview:)
 - [Features](#Features)
 - [How to Use the Keyboard](#Keyboard-Controls)
 - [How to Install](#Installation)
