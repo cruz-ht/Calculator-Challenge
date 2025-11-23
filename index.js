@@ -15,13 +15,21 @@ display.value = "";
 // what calculates the result after "=" is pressed and a catch method for any potential errors
 function calculate(){
     try{
-    display.value = eval(display.value);
+        const result = eval(display.value);
+
+        // catch for dividing by zero, displaying a message instead of "Infinity"
+        if (result === Infinity || result === -Infinity) {
+            display.value = "Cannot Divide !";
+            return;
+        }
+
+        display.value = result;
     }
-    // in case of any error, what will be displayed to the user
     catch(error){
-    display.value = "ERROR";
+        display.value = "ERROR";
     }
 }
+
 
 // making accessible through keyboard
 document.addEventListener("keydown", function(keyboard){
