@@ -262,7 +262,7 @@ footer{
     
 
 /* desktops and large laptops */
-@media (min-width: 1025px){
+@media (min-width: 1024px){
     header{
         gap: 45em;
     }
