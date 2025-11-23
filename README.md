@@ -1,13 +1,13 @@
 ![README Banner](Images/readmelogo.png)
 # Table of Contents
-- [Project Overview](Overview:)
+- [Project Overview](Overview)
 - [Features](#Features)
 - [How to Use the Keyboard](#Keyboard-Controls)
 - [How to Install](#Installation)
 - [Hosted Url](#Live-Url)
 
 
-# Overview: 
+# Overview 
 
  Welcome to Cruz's Calculator, A Bobby Jack–inspired calculator designed for solving simple arithmetic with a fun aesthetic.
  Cruz Calculator performs addition, subtraction, multiplication, division, supports decimals, includes 
